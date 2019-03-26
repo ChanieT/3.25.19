@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>AddPerson</title>
+</head>
+<body>
+    <div>
+        <button id="add">Add</button>
+        <form method="post" action="/home/submitlist">
+            <div id="inputs">
+                <input type="text" placeholder="First Name" name="people[0].firstname" />
+                <input type="text" placeholder="Last Name" name="people[0].lastname" />
+                <input type="text" placeholder="Age" name="people[0].age" />
+            </div>
+            <button name="submitlist">Submit People</button>
+        </form>
+    </div>
+</body>
+</html>
+
+@section scripts {
+    <script>
+    </script>
+    <script src="/Scripts/index.js"></script>
+}
+
+
